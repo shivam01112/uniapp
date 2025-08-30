@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uniapp Solution</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Uniapp Solution" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="d-flex">
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-location-pin"></i>Our Workshop: 1234 Elm Street, Springfield, Delhi 12345</a></div>
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-clock-time"></i>Monday - Saturday 08.00 - 18.00</a></div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <!-- <a class="btn-topbar bg-color me-3" href="book-repair.html">Book a Repair</a> -->
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="">
+                                        <!-- <img class="logo-main" src="images/logo.webp" alt="" >
+                                        <img class="logo-scroll" src="images/logo-black.webp" alt="" >
+                                        <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <h2 style="color: #fff;">Uniapp Solution</h2>
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="">Home</a>
+                                        <!-- <ul class="mega">
+                                            <li>
+                                                <div class="container">
+                                                    <div class="sb-menu p-4">
+                                                        <div class="row g-3">
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="index.html">
+                                                                        <img src="images/demo/homepage-1.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 2</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-2.html">
+                                                                        <img src="images/demo/homepage-2.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 2</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-3.html">
+                                                                        <img src="images/demo/homepage-3.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 3</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-4.html">
+                                                                        <img src="images/demo/homepage-4.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 4</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-5.html">
+                                                                        <img src="images/demo/homepage-5.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 5</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-6.html">
+                                                                        <img src="images/demo/homepage-6.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 6</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-7.html">
+                                                                        <img src="images/demo/homepage-7.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 7</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-8.html">
+                                                                        <img src="images/demo/homepage-8.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 8</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-9.html">
+                                                                        <img src="images/demo/homepage-9.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 9</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-10.html">
+                                                                        <img src="images/demo/homepage-10.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 10</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-11.html">
+                                                                        <img src="images/demo/homepage-11.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 11</h6>                          
+                                                            </div>
+
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                                                                <div class="relative hover text-center overflow-hidden soft-shadow rounded-5">
+                                                                    <a class="p-0" href="homepage-12.html">
+                                                                        <img src="images/demo/homepage-12.webp" class="w-100 relative hover-scale-1-1" alt="">
+                                                                    </a>
+                                                                </div>                            
+                                                                <h6 class="mt-3">Homepage 12</h6>                          
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="menu-item" href="">Services</a>
+                                        <!-- <ul>
+                                            <li><a class="menu-item" href="services.html">All Services</a></li>
+                                            <li><a class="menu-item" href="single-repair.html">Single Repair</a></li>
+                                            <li><a class="menu-item" href="single-repair-dark.html">Single Repair Dark</a></li>
+                                            <li><a class="menu-item" href="problems-we-repair.html">Problems We Repair</a></li>
+                                            <li><a class="menu-item" href="why-choose-us.html">Why Choose Us</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="menu-item" href="">Book a Repair</a></li>
+                                    <li><a class="menu-item" href="">Track My Repair</a></li>  
+                                    <li><a class="menu-item" href="">Blog</a>  
+                                        <!-- <ul>
+                                            <li><a class="menu-item" href="blog.html">Blog Default</a></li>
+                                            <li><a class="menu-item" href="blog-2.html">Blog Style 2</a></li>
+                                            <li><a class="menu-item" href="blog-single.html">Blog Single</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="menu-item" href="">Contact</a>
+                                      
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">  
+                                    <span id="menu-btn"></span>
+                                </div>
+
+                                <div id="btn-extra">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section class="main-banner-sec  text-light no-top no-bottom position-relative overflow-hidden z-1000">
+                <div class="v-center">
+                    <div class="swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-inner ">
+                                <div class="sw-caption">
+                                    <div class="container-fluid" style="width: 90%;">
+                                        <div class="row gx-5 justify-content-center align-items-center">                                            
+                                            <!-- <div class="spacer-double"></div> -->
+                                            <div class="col-lg-6 col-6 text-center mb-sm-30" style="padding: 0px;">
+                                                <img src="imgs/marketting-new.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-6 mb-sm-30">
+                                                <div class="sw-text-wrapper border-left light">
+                                                    <div class="subtitle mb-2">Skilled Professionals</div>
+                                                    <h1>Creative website designs <span class="typing-text">driven with precision.</span></h1>
+                                                    <p class="lead">Your trusted partner in expert web solutions. Where creativity meets precision, and your brand finds a digital life!</p>
+                                                    <div class="spacer-10"></div>
+                                                    <a class="btn-main mb10" href="#section-products">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- Slides -->
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-inner ">
+                                <div class="sw-caption">
+                                    <div class="container">
+                                        <div class="row gx-5 justify-content-center align-items-center">                                            
+                                            <!-- <div class="spacer-double"></div> -->
+                                            <div class="col-lg-6 col-6 text-center mb-sm-30" style="padding: 0px;">
+                                                <img src="imgs/marketting-new.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-6 mb-sm-30">
+                                                <div class="sw-text-wrapper border-left light">
+                                                    <div class="subtitle mb-2">Skilled Professionals</div>
+                                                    <h1>Powerful digital marketing <span class="typing-text">driven with precision.</span></h1>
+                                                    <p class="lead">Your trusted partner in expert digital growth. Where strategy meets precision, and your brand finds a thriving voice!</p>
+                                                    <div class="spacer-10"></div>
+                                                    <a class="btn-main mb10" href="contact.html">Read More</a>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="swiper-inner ">
+                                <div class="sw-caption">
+                                    <div class="container">
+                                        <div class="row gx-5 justify-content-center align-items-center">                                            
+                                            <!-- <div class="spacer-double"></div> -->
+                                            <div class="col-lg-6 col-6 text-center mb-sm-30" style="padding: 0px;">
+                                                <img src="imgs/marketting-new.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-6 mb-sm-30">
+                                                <div class="sw-text-wrapper border-left light">
+                                                    <div class="subtitle mb-2">Skilled Professionals</div>
+                                                    <h1>Innovative app solutions <span class="typing-text">built with precision.</span></h1>
+                                                    <p class="lead">Your trusted partner in expert app solutions. Where innovation meets precision, and your software finds a smarter life!</p>
+                                                    <div class="spacer-10"></div>
+                                                    <a class="btn-main mb10" href="contact.html">Read More</a>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        
+
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                
+            </section>
+
+
+                   <section class="pt60" style="padding-top: 40px;">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="relative">
+                                <div class="abs bg-color-2 text-dark p-3 bottom-0 end-0 w-120px text-center mb-4 me-4 z-2 rounded-1 wow fadeIn" data-wow-delay=".5s">
+                                    <h2 class="fs-48 mb-1">25</h2>
+                                    <div class="border-bottom-1-dark mb-2"></div>
+                                    <div class="fw-500 text-uppercase lh-1-5 fs-12">
+                                        Year of Experience
+                                    </div>
+                                </div>
+
+                                <img src="imgs/abt-im.jpg" class="img-fluid wow scaleIn" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-lg-5">
+                                <div class="subtitle wow fadeInUp mb-3">Welcome to Uniapp Solution</div>
+                                
+                                <h2 class="wow fadeInUp">Shaping the Next Era of Digital Innovation</h2>
+                                
+                                <p class="lead wow fadeInUp">Uniapp Solution has established itself as a leader in web and mobile app development, delivering high-quality digital solutions to clients worldwide. We focus on crafting customized digital products that foster innovation, boost business performance, and maximize user engagement. Our team of skilled professionals is dedicated to advancing technology, ensuring your business stays ahead of the competition.</p>
+                                <div class="spacer-10"></div>
+                                <a class="btn-main fx-slide wow fadeInUp" href=""><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- <section class="section-dark bg-dark-2 text-light pt-60 pb-60">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-4">
+                            <h3 class="mb-0">Track Your Repair</h3>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-md-9 col-8">
+                                    <div class="hover-underline">
+                                        <input class="form-underline mb-0 no-border fs-18" id='order_id' name='order_id' placeholder="enter your order number here..." type='text'>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-4">
+                                    <a class="btn-main fx-slide w-100" href="track.html"><span>Track It</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+         
+
+        
+
+            <section class="section-dark jarallax text-light">
+                <img src="imgs/mid-banner.jpg" class="jarallax-img" alt="">
+                <div class="container relative z-2">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <h2 class="mb-0" style="font-size: 46px; margin-bottom: 29px !important;">Hire App Developers<br> Your Dream Team</span></h2>
+                            <h4>Scale your development team with top-tier, in-house experts</h4>
+                             <p class="wow fadeInUp" data-wow-delay=".4s">At Uniapp Solution, we are a team of skilled and experienced developers dedicated to building powerful digital products. </p>
+                                 
+                                <ul class="ul-style-2 fw-600 text-white mb-4 wow fadeInUp" data-wow-delay=".6s">
+                                <li>We are skilled and experienced developers</li>
+<li>We deliver tailored digital solutions globally</li>
+<li>We create apps that boost growth and engagement</li>
+                                </ul>
+                            <div class="relative mt-3 mb-3">
+                                <img src="images/testimonial/1.webp" class="w-50px circle ms-min-10" alt="">
+                                <img src="images/testimonial/2.webp" class="w-50px circle ms-min-10" alt="">
+                                <img src="images/testimonial/3.webp" class="w-50px circle ms-min-10" alt="">
+                                <img src="images/testimonial/4.webp" class="w-50px circle ms-min-10" alt="">
+                                <img src="images/testimonial/5.webp" class="w-50px circle ms-min-10" alt="">
+                            </div>
+                             <span class="fs-14">Trusted by 1800+ customers</span>
+                        </div>
+
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="row g-4">
+
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <div class="de_count wow fadeInUp">
+                                        <h3 class="id-color-3"><span class="timer" data-to="2275" data-speed="3000"></span>+</h3>
+                                        <h4>Completed Repairs</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <div class="de_count wow fadeInUp">
+                                        <h3 class="id-color-3"><span class="timer" data-to="1800" data-speed="3000"></span>+</h3>
+                                        <h4>Customers</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <div class="de_count wow fadeInUp">
+                                        <h3 class="id-color-3"><span class="timer" data-to="99" data-speed="3000"></span>%</h3>
+                                        <h4>Positive Reviews</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="de-overlay"></div>
+            </section>
+
+
+
+
+ <section class="bg-grey">
+                <div class="container">
+                    <div class="row g-4 mb-2 justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="subtitle s2 wow fadeInUp mb-2">Our Services</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Delivering Digital Excellence</h2>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                            <div class=" text-dark h-100  overflow-hidden" style="background-color: #f4f4f4;">
+                                <div class="relative overflow-hidden">
+                             
+                                    <img src="imgs/api.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">App & Software Development</h4>
+                                    <p class="mb-0">We build custom apps and software solutions that streamline processes, enhance engagement, and boost performance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                            <div class="bg-dark-2 text-light h-100 overflow-hidden">
+                                <div class="relative overflow-hidden">
+                                 
+                                    <img src="imgs/cyber.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">Cyber Security & QA</h4>
+                                    <p class="mb-0">Protecting businesses with advanced security, thorough testing, and vulnerability assessments to ensure reliable operations.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                              <div class=" text-dark h-100  overflow-hidden" style="background-color: #f4f4f4;">
+                                <div class="relative overflow-hidden">
+                                 
+                                    <img src="imgs/data.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">Cloud Storage – GWS & MS</h4>
+                                    <p class="mb-0">Secure, scalable, and efficient cloud storage solutions enabling businesses to manage data with confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                            <div class="bg-dark-2 text-light h-100 overflow-hidden">
+                                <div class="relative overflow-hidden">
+                                   
+                                    <img src="imgs/digital.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">Digital Marketing – SEO, SMM, Google Ads, Mail</h4>
+                                    <p class="mb-0">Driving growth through targeted campaigns, creative content, and optimized strategies across multiple digital platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                            <div class="bg-dark-2 text-light h-100 overflow-hidden">
+                                <div class="relative overflow-hidden">
+                                   
+                                    <img src="imgs/web-design.png" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">Website Design & Development</h4>
+                                    <p class="mb-0">Crafting visually appealing, user-friendly, and responsive websites designed to elevate brands and improve conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                                <div class=" text-dark h-100  overflow-hidden" style="background-color: #f4f4f4;">
+                                <div class="relative overflow-hidden">
+                                   
+                                    <img src="imgs/ux.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">UI/UX Design</h4>
+                                    <p class="mb-0">Delivering intuitive, seamless, and engaging user experiences through creative interface design and customer-centric strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                            <div class="bg-dark-2 text-light h-100 overflow-hidden">
+                                <div class="relative overflow-hidden">
+                                  
+                                    <img src="imgs/str.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">IT Consulting & Strategy</h4>
+                                    <p class="mb-0">Providing expert technology consulting, strategic planning, and guidance to ensure businesses stay future-ready.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInRight hover" data-wow-delay="0s">
+                               <div class=" text-dark h-100  overflow-hidden" style="background-color: #f4f4f4;">
+                                <div class="relative overflow-hidden">
+                                    
+                                    <img src="imgs/e-co.jpg" class="img-fluid hover-scale-1-1" alt="">
+                                    <div class="de-overlay-gradient-dark op-5 h-50 top-50"></div>
+                                </div>
+                            
+                                <div class="p-30">
+                                    <h4 class="border-bottom-1-light pb-3">E-commerce Solutions</h4>
+                                    <p class="mb-0">Developing secure, scalable, and high-performance e-commerce platforms that maximize sales and customer satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+                 <section class="section-dark bg-dark text-light no-top no-bottom overflow-hidden">
+                <div class="container-fluid relative half-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Image -->
+                      <div class="col-lg-6 position-lg-absolute right-half h-100 overflow-hidden rounded-bottom-start-60">
+                        <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                            <!-- <a class="player d-block hover popup-youtube bg-dark-2 no-border rounded-1 wow scaleIn" href="https://www.youtube.com/watch?v=C6rf51uHWJg"><span></span></a> -->
+                        </div>
+                        <div class="image" data-bgimage="url(imgs/new-video.jpg) center"></div>
+                      </div>
+                      <!-- Text -->
+                      <div class="col-lg-5 relative z-2">
+                            <div class="spacer-double"></div>
+                            <div class="ps-lg-5">
+                                <div class="subtitle wow fadeInUp mb-3">Our Experts</div>
+                                <h2 class="wow fadeInUp">Trust our experts for reliable gadget solutions</h2>
+                                <p class="wow fadeInUp">Our company has established itself as a trusted name in gadget repair, delivering high-quality solutions to customers worldwide. We specialize in providing accurate diagnostics and durable repairs that restore performance and extend device life. Our team of skilled technicians is committed to excellence, ensuring your gadgets remain reliable, efficient, and ready for everyday use.</p>
+                                <div class="spacer-10"></div>
+                                <a class="btn-main fx-slide wow fadeInUp" href=""><span>Contact Us</span></a>
+                            </div>
+                            <div class="spacer-single sm-hide"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+
+
+            
+           
+            <section class="bg-grey">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-12 text-center">
+                            <div class="subtitle s2 wow fadeInUp mb-3">Services Process</div>
+                            <h2 class="wow fadeInUp mb-4" data-wow-delay=".2s">Why Choose Us</h2>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>Skilled & Experienced Team</h4>
+                                    <p>Our in-house experts bring years of proven experience, delivering reliable, innovative, and high-performing digital solutions for businesses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>Customized Digital Solutions</h4>
+                                    <p>We craft tailored applications and platforms designed to match your business goals, enhance engagement, and maximize measurable outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>Cutting-Edge Technology</h4>
+                                    <p>By adopting the latest tools and frameworks, we ensure your business stays competitive and ahead of digital transformation trends.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>Global Client Trust</h4>
+                                    <p>Trusted by clients worldwide, we consistently deliver quality solutions that drive growth, foster innovation, and strengthen long-term partnerships.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>End-to-End Services</h4>
+                                    <p>From concept to deployment, we cover every stage of development, ensuring seamless integration, scalability, and continuous business success.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="relative">
+                                <i class="bg-color icon_check fs-40 p-2 rounded-1 mb-3 text-white"></i>
+                                <div class="mb-3 mt-3">
+                                    <h4>Quality & Security Focus</h4>
+                                    <p>We prioritize rigorous testing, security measures, and quality assurance to protect your systems and guarantee dependable digital performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+          <section class="section-dark no-top no-bottom overflow-hidden">
+                <div class="container-fluid relative half-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Image -->
+                      <div class="col-lg-6 position-lg-absolute left-half h-100 overflow-hidden rounded-bottom-end-60">
+                        <div class="image" data-bgimage="url(images/misc/9.webp) center"></div>
+                      </div>
+                      <!-- Text -->
+                      <div class="col-lg-6 offset-lg-6 relative z-2">
+                            <div class="spacer-double"></div>
+                            <div class="ps-lg-5">
+                                <div class="subtitle s2 wow fadeInUp mb-2">Questions</div>
+                                <h2 class="wow fadeInUp mb-2" data-wow-delay=".2s">Frequently asked questions</h2>
+                               <div class="accordion s2 wow fadeInUp">
+    <div class="accordion-section">
+        <div class="accordion-section-title" data-tab="#accordion-a1">
+            What types of solutions do you provide?
+        </div>
+        <div class="accordion-section-content" id="accordion-a1">
+            <p class="mb-0">We provide a wide range of digital solutions including web apps, mobile apps, cloud systems, and enterprise platforms.</p>
+        </div>
+        <div class="accordion-section-title" data-tab="#accordion-a2">
+            What industries do you serve?
+        </div>
+        <div class="accordion-section-content" id="accordion-a2">
+            <p class="mb-0">We serve clients across industries such as e-commerce, healthcare, finance, education, real estate, travel, and many others.</p>
+        </div>                                        
+        <div class="accordion-section-title" data-tab="#accordion-a3">
+            Do you offer support after project delivery?
+        </div>
+        <div class="accordion-section-content" id="accordion-a3">
+            <p class="mb-0">Yes, we offer dedicated post-launch support for all our projects. This includes updates, bug fixes, and performance improvements.</p>
+        </div>
+        <div class="accordion-section-title" data-tab="#accordion-a4">
+            How can I start a project with you?
+        </div>
+        <div class="accordion-section-content" id="accordion-a4">
+            <p class="mb-0">You can contact us through our website, schedule a consultation, or email us your requirements. Our team will guide you through the process.</p>
+        </div>
+        <div class="accordion-section-title" data-tab="#accordion-a5">
+            Do I need to share my business data before development?
+        </div>
+        <div class="accordion-section-content" id="accordion-a5">
+            <p class="mb-0">Yes, we recommend sharing relevant data and requirements before development. While we ensure confidentiality, clear inputs guarantee better results.</p>
+        </div>
+        <div class="accordion-section-title" data-tab="#accordion-a6">
+            How long does development usually take?
+        </div>
+        <div class="accordion-section-content" id="accordion-a6">
+            <p class="mb-0">The timeline varies depending on project scope and features. Simple apps may take weeks, while complex platforms require a few months.</p>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="spacer-single sm-hide"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        
+        <!-- footer begin -->
+        <footer class="section-dark">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- <img src="images/logo.webp" class="w-150px" alt="" > -->
+                          <h2 style="color: #fff;">Uniapp Solution</h2>
+                        <div class="spacer-20"></div>
+                        <p>Uniapp Solution has established itself as a leader in web and mobile app development, delivering high-quality digital solutions to clients worldwide.</p>
+
+                        <div class="social-icons mb-sm-30">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul>                                        
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="">Our Services</a></li>
+                                        <li><a href="">About</a></li>
+                                        <li><a href="">Career</a></li>
+                                        <li><a href="">Clients</a></li>
+                                        <li><a href="">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="">Business Productivity</a></li>
+                                        <li><a href="">Mobile App Development</a></li>
+                                        <li><a href="">Cyber Security</a></li>
+                                        <li><a href="">Web Dev & Design</a></li>
+                                        <li><a href="">Digital Marketing</a></li>
+                                        <li><a href="">Cloud Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-white"><i class="icofont-clock-time me-2 id-color-2"></i>We're Open</div>
+                            Monday - Saturday 08.00 - 18.00
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color-2"></i>Workshop Location</div>
+                          1234 Elm Street, XYZ, New Delhi 12345
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color-2"></i>Send a Message</div>
+                            contact@demo.com                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    Copyright 2025 - Uniapp Solution
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- overlay content begin -->
+    <!-- <div id="extra-wrap" class="text-light">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo.webp" class="w-150px" alt="">
+
+            <div class="spacer-30-line"></div>
+
+            <h5 class="mb-3">Our Services</h5>
+            
+            <div class="row g-2">
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/iphone-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Phone Repair</h6>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/tablet-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Tablet Repair</h6>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/macbook-pro-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Laptop Repair</h6>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/game-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Game Console</h6>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/smartwatch-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Smartwatch</h6>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4">
+                    <a class="p-0 py-2 text-center d-block" href="single-repair.html">
+                        <img src="images/svg-color/software-svgrepo-com.svg" class="w-50px mb-3" alt="">
+                        <h6 class="mb-0">Software Repair</h6>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="spacer-30-line"></div>
+
+            <h5>Contact Us</h5>
+            <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Saturday 08.00 - 18.00</div>
+            <div><i class="icofont-location-pin me-2 op-5"></i>100 S Main St, New York, </div>
+            <div><i class="icofont-envelope me-2 op-5"></i>contact@gadgetfix.com</div>    
+
+            <div class="spacer-30-line"></div>
+
+            <h5>About Us</h5>
+            <p>We’re passionate about keeping your gadgets in top shape. Our dedicated team of experienced technicians combines technical expertise with exceptional customer service to provide reliable repairs for all your electronic devices.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div> -->
+    <!-- overlay content end -->
+
+    <!-- <div id="buy-now" class="show-on-scroll">
+        <a class="btn-buy" href="https://themeforest.net/cart/configure_before_adding/54339015" target="_blank">Buy on <img src="demo/envato.webp" class="" alt=""></a>
+    </div> -->
+    
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/custom-marquee.js"></script>
+    <script src="js/custom-swiper-1.js"></script>
+     <script>
+    const typingElement = document.querySelector('.typing-text');
+    const textToType = ""; // no text
+    let charIndex = 0;
+    let isTyping = true;
+
+    function typeText() {
+        if (isTyping && charIndex < textToType.length) {
+            typingElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 50);
+        } else if (charIndex === textToType.length && textToType.length > 0) {
+            isTyping = false;
+            setTimeout(deleteText, 300);
+        }
+    }
+
+    function deleteText() {
+        if (!isTyping && charIndex > 0) {
+            typingElement.textContent = textToType.substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(deleteText, 30);
+        } else if (charIndex === 0 && textToType.length > 0) {
+            isTyping = true;
+            setTimeout(typeText, 100);
+        }
+    }
+
+    // Only run if there’s text
+    if (textToType.length > 0) {
+        typeText();
+    }
+</script>
+
+
+</body>
+
+</html>
