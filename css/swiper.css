@@ -707,3 +707,21 @@ button.swiper-pagination-bullet {
 .main-banner-sec{
     height: 100vh !important;
 }
+.icon-row-new i{
+  font-size: 36px;
+  color: #0b4848;
+}
+.bg-custom{
+  background-color: #f1f1f1 !important;
+}
+
+.custom-con .col-lg-3 .h-100{
+  background-color: #fff !important;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+ border-radius: 12px !important;
+}
+.contact-details-page{
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+}
